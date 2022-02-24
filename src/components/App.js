@@ -25,7 +25,7 @@ const App = (props) => {
         </button>
 
         <button
-          disabled={selectedIndex === slides.lenght - 1}
+          disabled={selectedIndex === slides.length - 1}
           onClick={() => {
             setDisabled(false);
             setSelectedIndex(selectedIndex + 1);
