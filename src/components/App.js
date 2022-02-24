@@ -15,6 +15,7 @@ const App = (props) => {
       </div>
       <div>
         <button
+          data-testid="button-prev"
           disabled={selectedIndex === 0}
           onClick={() => {
             setDisabled(false);
@@ -25,6 +26,7 @@ const App = (props) => {
         </button>
 
         <button
+          data-testid="button-next"
           disabled={selectedIndex === slides.length - 1}
           onClick={() => {
             setDisabled(false);
@@ -35,6 +37,7 @@ const App = (props) => {
         </button>
 
         <button
+          data-testid="button-restart"
           disabled={disabled}
           onClick={() => {
             setDisabled(true);
